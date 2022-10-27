@@ -2,26 +2,22 @@
 body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
 }
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header img {
     width: 100%;
 }
-.aaa .more_inf {
-    font-family: fantasy, cursive;
+.header .more_inf {
+    font-family: "fantasy", sans-serif;
+    font-style: oblique;
 }
-
-@media (max-width:768px) {
-.aaa { text-align: center;
-}
-}
-.centered-main-page-element {
+.main-container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -50,7 +46,6 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
     cursor: pointer;
 }
 button:hover {
@@ -76,7 +71,7 @@ input[type="text"] {
     border: 1px solid #dDd;
     background: #FFF;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #888;
 }
 input[type="text"]:focus {
@@ -129,7 +124,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
@@ -146,3 +141,8 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
     display:none;
 }
+
+@media (max-width:768px) {
+    .header { text-align: center;
+    }
+    }
